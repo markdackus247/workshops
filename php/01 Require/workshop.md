@@ -25,8 +25,7 @@ In deze workshop ga je oefenen met het ordenen van code in verschillende bestand
 $host = "localhost";            // Hostnaam databaseserver
 $db = "phpworkshops";           // Naam database
 $user = "phpworkshops";         // Gebruikersnaam database
-$pass = 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-';
+$pass = 'P1e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855';
 $charset = "utf8mb4";           // Meest gebruikte characterset voor MySQL.
 ```
 
@@ -62,7 +61,7 @@ try {
 ### 9. Tabel users aanmaken
 > Log in op MySQL en maak een tabel aan met de naam users en de velden zoals hieronder beschreven.
 ```sql
-CREATE TABLE users (
+CREATE TABLE user (
     id CHAR(36) PRIMARY KEY,
     username VARCHAR(50) NOT NULL,
     password VARCHAR(255) NOT NULL,
@@ -78,7 +77,7 @@ CREATE TABLE users (
 ### 10. Tabel users vullen
 > Log in het PHPMyAdmin en vul de tabel met de onderstaande tien records.
 ```sql
-INSERT INTO users (id, username, password, email, first_name, last_name, birth_date) VALUES
+INSERT INTO user (id, username, password, email, first_name, last_name, birth_date) VALUES
 (UUID(), 'user1', 'password1', 'user1@example.com', 'John', 'Doe', '1990-01-01'),
 (UUID(), 'user2', 'password2', 'user2@example.com', 'Jane', 'Smith', '1992-02-02'),
 (UUID(), 'user3', 'password3', 'user3@example.com', 'Alice', 'Johnson', '1994-03-03'),
