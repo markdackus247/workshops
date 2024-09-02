@@ -1,7 +1,9 @@
 # Require workshop
 
+In deze workshop ga je oefenen met het ordenen van code in verschillende bestanden. We gebruiken de database connectie als voorbeeld.
+
 ### 1. Bestudeer
-> Bestudeer deze video die uitlegt hoe require en include werken: [uitleg require en include](https://youtu.be/pQLO6l5lp-Y?feature=shared).
+> Bestudeer deze video die uitlegt hoe require en include werken: [uitleg require en include](https://youtu.be/pQLO6l5lp-Y?feature=shared). **Let op! Video kan soms best pittig zijn, laat je hierdoor niet ontmoedigen.**
 
 
 ### 2. Repository aanmaken op Github
