@@ -110,3 +110,14 @@ $stmt = $dsn->query($sql);
 ```php
 // Voeg een require aan deze controller pagina toe om de view usertable.php aan te roepen. Als je nu in de browser http://localhost:8000/users aanroept krijg je de tabel met gebruikers.
 ```
+
+### 13. View usertable.php opschonen
+> Verplaats zoveel mogelijk php code van de view-pagina usertable.php naar de controller pagina users/index.php. Alleen de noodzakelijk php code mag overblijven.
+
+
+### 14. View voor toevoegen gebruiker toevoegen
+> Maak een HTML-formulier aan het toevoegen van een nieuwe gebruiker. **Noem deze pagina view/users/userform.php**.
+
+
+### 15. Controller pagina userform
+> Maak een controllerpagina aan voor het aanroepen van **
