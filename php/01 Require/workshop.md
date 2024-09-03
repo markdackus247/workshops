@@ -7,7 +7,7 @@
 
 
 ### 2. Repository aanmaken op Github
-> Maak een repository aan met de naam "phpworkshops". Open de repository in Visual Studio Code.
+> Maak een repository aan op Github.com met de naam "phpworkshops". Open de repository in Visual Studio Code. Gebruik Github Desktop.
 
 
 ### 3. TOP 5 PHP Extensions
@@ -30,7 +30,7 @@ $charset = "utf8mb4";           // Meest gebruikte characterset voor MySQL.
 ```
 
 ### 6. Database en user aanmaken.
-> Open PHPMyAdmin en maak de database "phpworkshops" aan. Maak ook de gebruiker aan met de gegevens zoals beschreven in de **db.conf.php** file. Je kunt dit ook met SQL doen?
+> Open PHPMyAdmin en maak de database "phpworkshops" aan. Maak ook de gebruiker aan met de gegevens zoals beschreven in de **db.conf.php** file. Je kunt dit ook met SQL doen? Probeer het met en zonder sql commando's.
 ```sql
 CREATE DATABASE phpworkshops;
 CREATE USER 'phpworkshopsUser'@'localhost' IDENTIFIED BY 'E@3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855';
@@ -39,10 +39,10 @@ FLUSH PRIVILEGES;
 ```
 
 ### 7. Database connectie aanmaken.
-> Maak een map **database** aan in de root van de webserver en maak hierin een bestand **connection.php** aan.
+> Maak een map **database** aan in de root van de webserver en maak hierin een bestand **connection.php** aan. Zorg dat het bestand **db.conf.php** wordt binnengehaald met require. 
 
 ```php
-// Voeg hier een require toe om de variabelen van het bestand db.conf te importeren.
+// Voeg hier een require toe om de variabelen van het bestand db.conf.php te importeren.
 
 <?php
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
@@ -60,11 +60,11 @@ try {
 ```
 
 ### 8. Comments (opmerkingen) toevoegen
-> Voor op een professionele manier "comments" toe aan de code in het bestand **connection.php**.
+> Voor op een professionele manier "comments" toe aan de code in het bestand **connection.php**. Leg in eigen woorden uit. Niet in de woorden van chatGPT.
 
 
 ### 9. Tabel users aanmaken
-> Log in op MySQL en maak een tabel aan met de naam users en de velden zoals hieronder beschreven.
+> Log in op MySQL en maak een tabel aan met de naam users en de velden zoals hieronder beschreven. Probeer het zonder gebruik te maken van het onderstaande commando.
 ```sql
 CREATE TABLE user (
     id CHAR(36) PRIMARY KEY,
@@ -96,7 +96,7 @@ INSERT INTO user (id, username, password, email, first_name, last_name, birth_da
 ```
 
 ### 11. View users aanmaken
-> Maak een map **views/users** aan in de root van de webserver en maak hierin een bestand **usertable.php** aan. Maak op deze pagina een tabel
+> Maak een map **views/users** aan in de root van de webserver en maak hierin een bestand **usertable.php** aan. Maak op deze pagina een tabel waarin alle gebruiker onder elkaar komen te staan.
 ```php
 <?php
 // Gebruik hier een require om de database verbinding $dsn te importeren.
@@ -105,19 +105,19 @@ INSERT INTO user (id, username, password, email, first_name, last_name, birth_da
 $sql = 'SELECT * FROM users';
 $stmt = $dsn->query($sql);
 
-// Maak hier een tabel aan met HTML om alle gebruikers netjes te laten zien.
+// Maak hier een HTML-pagina aan om alle gebruikers netjes te laten zien.
 // Hoe zorg je ervoor dat de gebruikers georderd worden op achternaam?
 ```
 
 ### 12. Controllerpagina users aanmaken
-> Maak een map **users** aan in de root van de webserver en maak hierin een bestand **index.php** aan. Gebruik hiervoor een require om de view van het bestand **usertable.php** binnen te halen.
+> Maak een map **users** aan in de root van de webserver en maak hierin een bestand **index.php** aan. Gebruik in de code een require om de view van het bestand **usertable.php** binnen te halen.
 
 ```php
 // Voeg een require aan deze controller pagina toe om de view usertable.php aan te roepen. Als je nu in de browser http://localhost:8000/users aanroept krijg je de tabel met gebruikers.
 ```
 
 ### 13. View usertable.php opschonen
-> Verplaats zoveel mogelijk php code van de view-pagina usertable.php naar de controller pagina users/index.php. Alleen de noodzakelijk php code mag overblijven.
+> Verplaats zoveel mogelijk php code van de view-pagina usertable.php naar de controller pagina users/index.php. Alleen de noodzakelijk php code mag overblijven in de view.
 
 
 ### 14. View voor toevoegen gebruiker toevoegen
@@ -125,4 +125,4 @@ $stmt = $dsn->query($sql);
 
 
 ### 15. Controller pagina userform
-> Maak een controllerpagina aan voor het aanroepen met het adres **admin/users/index.php**. Gebruik require om deze view aan te roepen.
+> Maak een controllerpagina aan voor het aanroepen met het adres **admin/users/index.php**. Gebruik require om deze view aan te roepen. Net als bij onderdeel 12.
