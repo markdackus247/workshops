@@ -1,6 +1,6 @@
 # Require workshop
 
-In deze workshop ga je oefenen met het ordenen van code in verschillende bestanden. We gebruiken de database connectie als voorbeeld.
+**In deze workshop ga je oefenen met het ordenen van code in verschillende bestanden. We gebruiken de database connectie als voorbeeld.**
 
 ### 1. Bestudeer
 > Bestudeer deze video die uitlegt hoe require en include werken: [uitleg require en include](https://youtu.be/pQLO6l5lp-Y?feature=shared). **Let op! Video kan soms best pittig zijn, laat je hierdoor niet ontmoedigen.**
@@ -30,8 +30,13 @@ $charset = "utf8mb4";           // Meest gebruikte characterset voor MySQL.
 ```
 
 ### 6. Database en user aanmaken.
-> Open PHPMyAdmin en maak de database "phpworkshops" aan. Maak ook de gebruiker aan met de gegevens zoals beschreven in de **db.conf.php** file.
-
+> Open PHPMyAdmin en maak de database "phpworkshops" aan. Maak ook de gebruiker aan met de gegevens zoals beschreven in de **db.conf.php** file. Je kunt dit ook met SQL doen?
+```sql
+CREATE DATABASE phpworkshops;
+CREATE USER 'phpworkshopsUser'@'localhost' IDENTIFIED BY 'E@3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855';
+GRANT ALL PRIVILEGES ON phpworkshops.* TO 'phpworkshopsUser'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+```
 
 ### 7. Database connectie aanmaken.
 > Maak een map **database** aan in de root van de webserver en maak hierin een bestand **connection.php** aan.
@@ -120,4 +125,4 @@ $stmt = $dsn->query($sql);
 
 
 ### 15. Controller pagina userform
-> Maak een controllerpagina aan voor het aanroepen van **
+> Maak een controllerpagina aan voor het aanroepen met het adres **admin/users/index.php**. Gebruik require om deze view aan te roepen.
