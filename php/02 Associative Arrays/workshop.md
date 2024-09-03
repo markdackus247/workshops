@@ -19,7 +19,10 @@ $dbSettings = [
 ### 3. Associative array gebruiken
 > Open de controller pagina van het gebruikersoverzicht users/index.php. Maak een tabel (HTML) waarin de gegevens staan.
 
-| key       | value         |
-| -------   | -------       |
-| host      | localhost     |
-
+| key           | value             |
+| :------------ | :---------------- |
+| host          | localhost         |
+| db            | phpworkshops      |
+| username      | phpworkshopsUser  |
+| password      | 'E@3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'  |
+| charset       | utf8mb4           |
