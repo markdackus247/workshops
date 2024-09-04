@@ -91,7 +91,7 @@ $userHeerlen = [
 
 
 ### 8. Detail view aanmaken
-> Maak een html-pagina met de naam **views/users/detail.php**. Maak op deze pagina een tabel met alle gegevens van de gebruiker $userMaastricht. Require deze pagina binnen de pagina **user/overview/index.php**. Gebruik bootstrap 5 om deze pagina op te maken.
+> Maak een html-pagina met de naam **views/users/detail.php**. Maak op deze pagina een tabel met alle gegevens van de gebruiker $userMaastricht. Require deze pagina binnen de pagina **user/overview/index.php**. Gebruik bootstrap 5 om deze pagina op te maken. Zorg dat deze pagina wordt binnengehaald op de pagina  **user/overview/index.php**.
 
 ```html
 <!DOCTYPE html>
@@ -116,7 +116,7 @@ $userHeerlen = [
 ```
 
 ### 9. Nog een derder user array aanmaken
-> Maak op dezelfde pagina nog een derde array aan voor een gebruiker. **Zie tabel hier beneden**.
+> Maak op pagina **user/overview/index.php** nog een derde array aan voor een gebruiker. **Zie tabel hier beneden**.
 
 ```php
 $userSittard = [
@@ -153,7 +153,7 @@ echo "</pre>";
 
 
 ### 12. Tabel maken
-> Maak een tabel in HTML waarin je alle gebruikers kunt zien. Gebruik de functie foreach() om door de array heen te lopen.
+> Maak een tabel in HTML aan waarin je alle gebruikers kunt zien. Gebruik de functie foreach() om door de array heen te lopen. Doe dit binnen de HTML-view **views/users/detail.php**
 ```php
 <?php
 foreach ($allUsers as $user) {
@@ -170,4 +170,12 @@ foreach ($allUsers as $user) {
 <?php
 }
 ?>
+```
+
+### 13. PDO
+> Pas de controller pagina **user/overview/index.php** zodanig aan dat hij gebruik maakt van de database.
+```php
+$sql = 'SELECT * FROM users';
+$allUsers = $dsn->query($sql);
+// $allUsers kun je nu gebruiken als associative array.
 ```
