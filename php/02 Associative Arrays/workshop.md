@@ -1,6 +1,6 @@
 # Associative Arrays
 
-**In deze workshop ga je leren wat associative array zijn hoe je ze moet maken en gebruiken.**
+**In deze workshop ga je leren wat associative arrays zijn hoe je ze moet maken en gebruiken.**
 
 ### 1. Bestudeer
 [![](scherm.png)](https://www.youtube.com/playlist?list=PLRDVUEnDeEU7vj_tNnP7QF6TTLwwT7Sg_)
