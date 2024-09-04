@@ -6,7 +6,7 @@ require $_SERVER['DOCUMENT_ROOT'] . '/models/Educations.php';
 // Functie gebruikt om foutmeldingen af te vangen.
 require $_SERVER['DOCUMENT_ROOT'] . '/errors/error.php';
 
-// Hier wordt de internetverbinding aangeroepen.
+// Hier wordt de databaseverbinding aangeroepen.
 require $_SERVER['DOCUMENT_ROOT'] . '/config/db.conf.php';
 require $_SERVER['DOCUMENT_ROOT'] . '/database/db.connection.php';
 
