@@ -18,6 +18,7 @@
 | public | password | string |
 | public | charset | string |
 | public | options | array |
+| private | connection | PDO |
 
 ```php
 class Database {
