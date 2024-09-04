@@ -1,4 +1,4 @@
-# Overzichtshops
+# Overzicht workshops
 
 ### [1. Require](./01%20Require/workshop.md)
 In deze workshop ga je oefenen met het ordenen van code in verschillende bestanden. We gebruiken de database connectie als voorbeeld.
