@@ -11,7 +11,7 @@ require 'config/db.conf.php';
 require 'database/db.connection.php';
 
 // Hier worden alle  opleidingen opgehaald.
-$educations = selectAll($db);
+$educations = selectAll($pdo);
 
 $title = "MBO GO Digital";
 

@@ -3,7 +3,8 @@
 **In deze workshop ga je leren wat associative array zijn hoe je ze moet maken en gebruiken.**
 
 ### 1. Bestudeer
-> Bestudeer deze video waarin wordt uitgelegd wat een associative array is en hoe je hem moet gebruiken in php: [uitleg associative arrays](https://youtu.be/IdB2z5yVVNI?feature=shared). Doe de video ook even na.
+[![](scherm.png)](https://www.youtube.com/playlist?list=PLRDVUEnDeEU7vj_tNnP7QF6TTLwwT7Sg_)
+> Bestudeer deze video waarin wordt uitgelegd wat een associative array is en hoe je hem moet gebruiken in php.
 
 
 ### 2. Associative array voor variabelen database
