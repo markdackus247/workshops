@@ -25,7 +25,7 @@
 $host = "localhost";            // Hostnaam databaseserver
 $db = "phpworkshops";           // Naam database
 $user = "phpworkshops";         // Gebruikersnaam database
-$pass = 'P1e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855';
+$pass = "P1e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855";
 $charset = "utf8mb4";           // Meest gebruikte characterset voor MySQL.
 ```
 
@@ -125,4 +125,4 @@ $stmt = $dsn->query($sql);
 
 
 ### 15. Controller pagina userform
-> Maak een controllerpagina aan voor het aanroepen met het adres **admin/users/index.php**. Gebruik require om deze view aan te roepen. Net als bij onderdeel 12.
+> Maak een controllerpagina aan voor het aanroepen met het adres **admin/users/index.php**. Gebruik require om deze view aan te roepen. Net als bij onderdeel 12. 

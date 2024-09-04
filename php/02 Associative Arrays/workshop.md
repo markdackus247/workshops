@@ -114,4 +114,59 @@ $userHeerlen = [
 </html>
 ```
 
+### 9. Nog een derder user array aanmaken
+> Maak op dezelfde pagina nog een derde array aan voor een gebruiker. **Zie tabel hier beneden**.
 
+```php
+$userSittard = [
+    "id" => "e7b8c9d2-3f4a-4b5c-8a6d-1e2f3a4b5c6d",
+    "username" => "Vincent"
+    // Maak verder af met de gegevens van hier beneden.
+];
+```
+
+| Key | Value |
+| --- | ----- |
+| id | e7b8c9d2-3f4a-4b5c-8a6d-1e2f3a4b5c6d |
+| username | VincentTauben |
+| password | a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9 |
+| email | VincentTauben |
+| first_name | Vincent |
+| last_name | Tauben |
+| birth_date | 1967-03-21 00:00:00 |
+| last_login | 2024-09-08 04:18:13 |
+
+
+### 10. Array van arrays
+Het is heel normaal om arrays van arrays te maken. Zou dat betekenen dat we een array maken van gebruikers (arrays).
+> Maak een nieuwe array aan met de naam $allUsers[]. Voeg alle gebruikers in de arrays $userMaastricht, $userHeerlen en $userSittard toe aan deze array. Gebruik de functie array_push() om de elementen $userMaastricht, $userHeerlen en $userSittard aan de array $allUsers[] toe te voegen.
+
+
+### 11. print_r()
+> Gebruik de print_r() functie om de array in de html-pagina te bekijken. 
+```php
+echo "<pre>";
+print_r($allUsers);
+echo "</pre>";
+```
+
+
+### 12. Tabel maken
+> Maak een tabel in HTML waarin je alle gebruikers kunt zien. Gebruik de functie foreach() om door de array heen te lopen.
+```php
+<?php
+foreach ($allUsers as $user) {
+    ?>
+        <tr>
+            <td><?php echo $user["id"] ?></td>
+            <td><?php echo $user["username"] ?></td>
+            <td><?php echo $user["password"] ?></td>
+            <td><?php echo $user["email"] ?></td>
+            <td><?php echo $user["last_name"] ?></td>
+            <td><?php echo $user["birth_date"] ?></td>
+            <td><?php echo $user["last_login"] ?></td>
+        </tr>
+<?php
+}
+?>
+```
