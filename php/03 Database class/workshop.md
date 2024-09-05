@@ -41,6 +41,7 @@ class Database {
 }
 ```
 
+
 ### 4. Properties waarde toekennen.
 > Zorg vervoor dat de waarden van $dbSettings in de constructor worden toegewezen aan de properties.
 
@@ -56,5 +57,18 @@ class Database {
 }
 ```
 
+
 ### 5. Database object
-> Open het bestand **opleidingen/index.php** en voeg hier een require toe om het bestand **database/Database.php** binnen te halen.
+> Open het bestand **opleidingen/index.php** en voeg hier een require toe om het bestand **database/Database.php** binnen te halen en maak van class Database een nieuw object $dbObject.
+```php
+// Voeg hier een require toe voor het bestand "config/db.conf.php".
+// Voeg hier een require toe voor het bestand "database/Database.php".
+
+$dbObject = new Database($dbSettings);
+
+// Geef een melding als de verbinding me de databaseserver gelukt is.
+```
+
+
+### 6. Tweede database aanmaken
+> 
