@@ -103,8 +103,8 @@ INSERT INTO user (id, username, password, email, first_name, last_name, birth_da
 // Gebruik hier een require om de database verbinding $dsn te importeren.
 
 // SQL query om alle gebruikers op te halen
-$sql = 'SELECT * FROM users';
-$stmt = $dsn->query($sql);
+$sql = 'SELECT * FROM user';
+$stmt = $pdo->query($sql);
 
 // Maak hier een HTML-pagina aan om alle gebruikers netjes te laten zien.
 // Hoe zorg je ervoor dat de gebruikers georderd worden op achternaam?
