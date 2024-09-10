@@ -100,7 +100,7 @@ INSERT INTO user (id, username, password, email, first_name, last_name, birth_da
 > Maak een map **views/users** aan in de root van de webserver en maak hierin een bestand **usertable.php** aan. Maak op deze pagina een tabel waarin alle gebruiker onder elkaar komen te staan.
 ```php
 <?php
-// Gebruik hier een require om de database verbinding $dsn te importeren.
+// Require om de database verbinding $pdo te importeren.
 require "../../config/db.conf.php";
 require "../../database/connection.php";
 
