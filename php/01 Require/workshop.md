@@ -101,6 +101,8 @@ INSERT INTO user (id, username, password, email, first_name, last_name, birth_da
 ```php
 <?php
 // Gebruik hier een require om de database verbinding $dsn te importeren.
+require "../../config/db.conf.php";
+require "../../database/connection.php";
 
 // SQL query om alle gebruikers op te halen
 $sql = 'SELECT * FROM user';
