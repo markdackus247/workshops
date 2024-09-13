@@ -107,7 +107,7 @@ require "../../database/connection.php";
 // SQL query om alle gebruikers op te halen
 $sql = 'SELECT * FROM user';
 $stmt = $pdo->query($sql);
-$users = $stmt->fetch(PDO::FETCH_ASSOC);
+$users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 // Zo kun je het resultaat beijken.
 // echo "<pre>";
