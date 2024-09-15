@@ -26,12 +26,12 @@
 $host = "localhost";            // Hostnaam databaseserver
 $db = "phpworkshops";           // Naam database
 $user = "phpworkshopsUser";         // Gebruikersnaam database
-$pass = "P1e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855";
+$pass = "E@3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855";
 $charset = "utf8mb4";           // Meest gebruikte characterset voor MySQL.
 ```
 
 ### 6. Database en user aanmaken.
-> Open PHPMyAdmin en maak de database "phpworkshops" aan. Maak ook de gebruiker aan met de gegevens zoals beschreven in de **db.conf.php** file. Je kunt dit ook met SQL doen? Probeer het met en zonder sql commando's.
+> Open PHPMyAdmin of open de [shell](#16-mysql-gebruiken-in-shell-extra) in Xammp en maak de database "phpworkshops" aan. Maak ook de gebruiker aan met de gegevens zoals beschreven in de **db.conf.php** file. Je kunt dit ook met SQL doen? Probeer het met en zonder sql commando's.
 ```sql
 CREATE DATABASE phpworkshops;
 CREATE USER 'phpworkshopsUser'@'localhost' IDENTIFIED BY 'E@3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855';
@@ -65,7 +65,7 @@ try {
 
 
 ### 9. Tabel users aanmaken
-> Log in op MySQL en maak een tabel aan met de naam users en de velden zoals hieronder beschreven. Probeer het zonder gebruik te maken van het onderstaande commando.
+> Log in op PHPMyAdmin of open de [shell](#16-mysql-gebruiken-in-shell-extra) in Xammp en maak een tabel aan met de naam users en de velden zoals hieronder beschreven. Probeer het zonder gebruik te maken van het onderstaande commando.
 ```sql
 CREATE TABLE user (
     id CHAR(36) PRIMARY KEY,
@@ -130,8 +130,31 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
 ### 14. View voor toevoegen gebruiker toevoegen
-> Maak een HTML-formulier aan het toevoegen van een nieuwe gebruiker. **Noem deze pagina view/users/userform.php**.
+> Maak een HTML-formulier aan het toevoegen van een nieuwe gebruiker. **Noem deze pagina views/users/userform.php**.
 
 
 ### 15. Controller pagina userform
 > Maak een controllerpagina aan voor het aanroepen met het adres **admin/users/index.php**. Gebruik require om deze view aan te roepen. Net als bij onderdeel 12. 
+
+
+### 16. Mysql gebruiken in Shell (Extra)
+1. **Start XAMPP en klik op de "Shell"-knop om de command-line interface te openen.**
+     ![XAMPP Shell Screenshot](https://i.ibb.co/XzjjpDJ/image.png)
+
+2. **Voer het volgende commando in:**
+   ```bash
+   mysql -u root
+   ```
+    Dit opent de MySQL command-line client als de root-gebruiker.
+
+3. **Ga verder met [Stap 6](#6-database-en-user-aanmaken)** om de database en gebruiker aan te maken.
+
+4. **Een Database gebruiken met de mysql terminal**
+```sql
+USE phpworkshops
+```
+![Showcase](https://i.ibb.co/Pw6WxWG/image.png)
+
+4. **Ga dan verder met [Stap 9](#9-tabel-users-aanmaken)** om de table te vullen met data.
+
+5. Je kunt hierna op de [MySQL docs](https://dev.mysql.com/doc/refman/8.4/en/sql-statements.html) nog eens kijken naar wat van QUERIES je nog eens kunt proberen in de terminal of op PHPMyAdmin.
