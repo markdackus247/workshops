@@ -83,7 +83,7 @@ $userHeerlen = [
 | id | f47ac10b-58cc-4372-a567-0e02b2c3d479 |
 | username | TheoBovens |
 | password | a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t |
-| email | cor.dassen@outlook.com |
+| email | theo.bovens@outlook.com |
 | first_name | Theo |
 | last_name | Bovens |
 | birth_date | 1954-07-09 00:00:00 |
@@ -175,7 +175,8 @@ foreach ($allUsers as $user) {
 ### 13. PDO
 > Pas de controller pagina **user/overview/index.php** zodanig aan dat hij gebruik maakt van de database.
 ```php
-$sql = 'SELECT * FROM users';
-$allUsers = $dsn->query($sql);
+$sql = 'SELECT * FROM user';
+$stmt = $pdo->query($sql);
+$allUsers = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // $allUsers kun je nu gebruiken als associative array.
 ```
