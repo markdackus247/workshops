@@ -26,16 +26,21 @@ Installeer pycharm op je eigen laptop en maak een nieuw project aan met de naam 
 
 
 ### L4: Naam invoeren (Verplicht)
-Pas het bestaande script aan. Als je het script runt dan vraagt hij aan de gebruiker om zijn naam in te voeren. Nadat de naam is ingevoerd dan verschijnt de tekst "Hello, Bart" in beeld. In plaats van Bart staat er dan de ingevoerde naam.
+Pas het bestaande script aan. Als de gebruiker het script runt dan vraagt hij aan de gebruiker om zijn naam in te voeren. Nadat de naam is ingevoerd dan verschijnt de tekst "Hello, Bart" in beeld. In plaats van Bart staat er dan de ingevoerde naam.
 
 
 ### L5: Getal invoeren (Verplicht)
-...
+Pas het script aan. De gebruiker moet nu ook zijn leeftijd in jaren kunnen invullen. Trek daar 2 jaar van af en laat dit zien op het scherm.
+
 
 ### L6: Twee getallen invoeren en optellen
+Zorg dat de gebruiker van het script twee keer een getal kan invoeren. Als de gebruiker klaar is met invoeren dan telt het script de twee getallen bijelkaar op en laat het resultaat zien.
 
 
 ### L7: Prijs inclusief BTW berekenen
+Maak een nieuw script aan met de naam btwberekenen.py. Als de gebruiker het script runt dan wordt hij gevraagd om de prijs zonder BTW in te vullen. Het script berekent vervolgens de prijs met BTW en toont deze op het scherm. Het BTW percentage is 21%.
 
+> Hoe bereken je de prijs met BTW?
+> **prijs met BTW = prijs zonder BTW x 1.21**
 
 **Einde.**
