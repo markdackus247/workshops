@@ -23,7 +23,7 @@ Bereken het gemiddelde van de drie ingevoerde cijfers en print het gemiddelde op
 
 
 ### L3: Floats (Verplicht)
-Zorg ervoor dat ik ook decimale getallen kan invoeren.
+Zorg ervoor dat er ook decimale getallen kunnen worden ingevoerd.
 
 
 ### L4: Komma's door punten vervangen (Verplicht)
@@ -34,7 +34,7 @@ Als iemand een decimaal invoert met een komma, moet de komma door een punt verva
 Als iemand geen getal invoert dat moet dit gemeld worden.
 
 
-### L6: Pythagoras
+### L6: Pythagoras (Verplicht)
 Vraag de gebruiker om twee keer een rechhoekzijde in te vullen. Het programma berekent de hypothenusa (schuine zijde).
 
 
